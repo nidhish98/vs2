@@ -1,0 +1,4 @@
+reverse
+reverse(a.begin();a.end())
+sort
+sort(a.begin(),a.end())

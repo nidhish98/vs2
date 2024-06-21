@@ -1,0 +1,36 @@
+check if array sorted
+for(int i=1;i<n;i++){
+    if(arr[i]>arr[i-1]){
+        count
+    }
+    else{
+        return false;
+    }
+}
+    return true;
+}
+FOR Q IN ARR[I+1]/ARR[I-1]
+            LAST    FIRST 
+            
+  
+
+i>=n-2
+
+
+-----------------------------------------------------------------------
+second largest
+
+--------ARR[I]-------MAX1---MAX2
+-------MAX1--AR[I]---MAX2
+-------MAX
+
+
+rotated by 1 place left
+first element in temp 
+for(int i=1;i<n;i++)
+arr[i-1]=arr[i]
+}
+temp
+
+
+

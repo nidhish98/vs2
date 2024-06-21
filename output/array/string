@@ -1,0 +1,45 @@
+stoi and to_string
+
+string s = "10";
+int x = ?
+int x = stoi(s);   // x = 10
+
+
+int x =10;
+string s=?
+strring s = to_string(x)
+
+
+
+-----------------------------
+reverse(s.begin(),s.end())
+s.substr(0,3)
+printing from index to length 3
+
+
+largest odd no 
+class Solution {
+public:
+    string largestOddNumber(string num) {
+        vector<int>ans;
+        int n=num.length();
+       
+
+            if((num[n-1]-'0')%2!=0){
+                return num;  //odd
+            }
+            else{
+             for(int i=n-1;i>=0;i--){
+                
+            if((num[i]-'0')%2!=0){
+                return num.substr(0,i+1);
+
+             }
+            }
+            }
+
+            return "";
+    }
+
+  
+};

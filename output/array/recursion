@@ -1,0 +1,174 @@
+print name n time
+
+void name(int i,int n) {
+    if (i>n) {
+        return;  // base case
+    }
+    cout << "nidhish ";
+    
+    name(i+1,n);
+}
+
+int main() {
+    int n = 5;             o(n) and o(n)
+    name(0,n);
+
+    return 0;
+}
+q-print from n to 1
+void name(int i,int n) {
+    if (i<1) {
+        return;  // base case
+    }
+    cout << i ;
+    
+    name(i-1,n);
+}
+
+int main() {
+    int n = 4;
+    name(n,n);
+
+    return 0;
+}
+2nd method-
+void name(int i,int n) {
+    if (i>n) {
+        return;  // base case
+    }
+    name(i+1,n);
+    cout<<i;
+
+}
+
+int main() {
+    int n = 4;
+    name(1,n);
+
+    return 0;
+}
+another way of printing 1 to n
+
+void name(int i,int n) {
+    if (i<1) {
+        return;  // base case
+    }
+    name(i-1,n);    first functin call then print 
+                 last me i =1
+    cout<<i;      i=1 i=2 i=3 i=4 
+
+}
+
+int main() {
+    int n = 4;
+    name(n,n);
+
+    return 0;
+}
+
+summation (parameter)
+
+void summation(int i, int count) {
+    if (i < 1) {
+        cout << count;  // base case
+        return;
+    }
+    summation(i-1,count+i);
+}
+
+int main() {
+    int n=3;
+    summation(n, 0);
+
+    return 0;
+}
+
+int summation(int n) {
+    if(n==0){
+        return 0;
+    }
+     return n+summation(n-1);
+    }
+    
+    
+
+int main() {
+    int n=3;
+    cout<<summation(n);
+
+    return 0;
+}
+reverse an array
+void swapp(int i,int arr[], int n){
+    if(i>=n/2){
+        return;
+    }
+     swap(arr[i],arr[n-i-1]);
+     swapp(i+1,arr,n);
+}
+ 
+    
+    
+
+int main() {
+    int n=5;
+    int arr[n]={1,2,3,4,5};
+    swapp(0,arr,n);
+    for(int i=0;i<n;i++){
+        cout<<arr[i];
+    }
+    
+
+    return 0;
+}
+
+
+string is palindrome
+#include <iostream>
+using namespace std;
+
+bool isPalindrome(int i, string arr, int n) {
+    if (i >= n / 2) {
+        return true;
+    }
+
+    if (arr[i] != arr[n - 1 - i]) {
+        return false;
+    }
+
+    return isPalindrome(i + 1, arr, n);
+}
+
+int main() {
+    int n = 7;
+    string s = "nidhish";
+
+    if (isPalindrome(0, s, n)) {
+        cout << s << " is a palindrome." << endl;
+    } else {
+        cout << s << " is not a palindrome." << endl;
+    }
+
+    return 0;
+}
+2/3 multiple recursion call
+
+
+int fib(int n){
+    if(n<=1){
+        return n;
+    }
+   
+    return fib(n-1)+fib(n-2);
+}
+
+int main()
+
+{   
+    cout<<fib(4);
+    
+    subsewquences-
+    order has to be mantain
+   printing all subsewquences
+   1 2 3
+   1,12,13,123,1,2,3,empty =8
